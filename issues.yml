@@ -1,0 +1,16 @@
+---
+- summary: |
+    Ошибка ответа от сервера при попытке регистрации
+  environment: |
+    Firefox Updates
+    Keep Firefox up to date for the best performance, stability, and security.
+    Version 125.0.2 (64-bit)
+    Mozilla Firefox for linux mint
+    OC: linux Mint 21.3 Cinnamon v. 6.0.4
+  steps-to-reproduce: |
+    1. Перейти по ссылке (https://codebattle.hexlet.io/)
+    2. Нажать ссылку «Sing up»
+  expected-result: |
+    Должна открыться страница с формой регистрации
+  actual-result: |
+    Данные не доходят до сервера, происходит возврат на главную страницу (ошибка post запроса)
