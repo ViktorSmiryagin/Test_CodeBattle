@@ -394,3 +394,21 @@
     - В поиск вводим свой nickname 
   expected-result: |
     Отображена информация о пользователе в рейтинге за месяц
+---
+- summary: |
+    Проверка создания турнира 
+  requirement: |
+    Пользователи могут создавать, участвовать и смотреть турниры;
+  prerequisites: Пользователь авторизован и находится во вкладке "Tournaments"
+  test-data: |
+    Name: "MY TEST", Type "Versus", Description "-", Starts at
+    (Europe/Bucharest) "ближайшее время",  Access type "Token", Task strategy
+    "random_per_round", Score strategy "time_and_tests" Task provider "level",
+    Level "easy", Event "-", Players limit "2", Default language "js", Match
+    timeout seconds "177", Break duration seconds "42";
+  steps:
+    - Прожимаем кнопку "You may to create one
+    - Производим настройку согласно 'test-data'
+    - Прожимаем "Create"
+  expected-result: |
+    Турнир успешно создан 
