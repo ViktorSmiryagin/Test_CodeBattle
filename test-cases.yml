@@ -8,15 +8,14 @@
   test-data: |
     "no-data"  
   steps:
-    - Открываем DevTools
-    - Нажимаем кнопку «Toggle device toolb"
-    - Выбираем мобильное устройства
+    - Открыть DevTools
+    - Нажать кнопку «Toggle device toolb"
+    - Выбрать мобильное устройства
   expected-result: |
     Открывается мобильная версий сайта
 
----
 - sumamary: |
-      Проверка успешной регистрации
+    Проверка успешной регистрации
   requirements: |
     Пользователь должен иметь возможность зарегистрироваться на сайте при помощи формы регистрации
   preresequisites: |
@@ -24,14 +23,14 @@
   test-data: |
     email:hexletvik@gmail.com nickname: hexletvik  password: Hexlet2024 
   steps:
-    - Производим ввод nickname
-    - Производим ввод email
-    - производим ввод Password
-    - Производим повторный ввод  password
-    - Прожимаем кнопку "Submt"
+    - Производить ввод nickname
+    - Производить ввод email
+    - производить ввод Password
+    - Производить повторный ввод  password
+    - Прожать кнопку "Submt"
   expected-result: |
     Пользователь успешно прошел регистрацию
----
+
 - summary: |
     Проверка успешной авторизации 
   requirement: |
@@ -40,15 +39,15 @@
     Вошли на страницу авторизации "sign in"
     Пользователь ранее зарегистрирован  
   test-data: |
-    email: hexletvik@gmail.com and password Hexlet2024  
+    no-date  
   steps:
-    - Вписываем email
-    - Вписываем пороль
-    - Прожимаем на кнопку "Submit"
+    - Вписать email
+    - Вписать пороль
+    - Прожать кнопку "Submit"
   expected-result: |
     Пользователь успешно авторизован
 
----
+
 - sumamary: |
     Проверка успешной авторизации при помощи Github
   requirements: |
@@ -59,11 +58,11 @@
   test-data: |
     "no-data"
   steps:
-    - Прожимаем кнопку "sign in with Github"
+    - Прожать кнопку "sign in with Github"
   expected-result: |
     Пользователь успешно авторизован
 
----
+
 - sumamary: |
     Проверка Успешной авторизации при помощи Discord
   requirements: |
@@ -74,43 +73,84 @@
   test-data: |
     "no-data"
   steps:
-    - Прожимаем кнопку "sign in with Discord"
+    - Прожать кнопку "sign in with Discord"
   expected-result: |
     Пользователь успешно авторизован
----
+
+    
+- summary: |
+    Проверка поля ввода email при регистрации
+  requirement: |
+    Почта при регистрации или авторизации не может быть пустой;
+  prerequisites: |
+    Пользователь не авторизирован
+  test-data: |
+    email:- nickname: hexletvik  password: Hexlet2024
+  steps:
+    - Вводить "nickname"
+    - Вводить "password" 
+    - Вводить "Password Confirmation"
+    - Прожать кнопку "Submit"
+  expected-result: |
+    Выводится ошибка "Введите email"
+    
+    
+- summary: |
+    Проверка регистрации с nickname существующий в системе
+  requirement: |
+    Пользователь не может взять nickname который уже пристусвует в системе;
+  prerequisites: |
+    Имеется аккаунт с nickname: Hexletvik
+  test-data: |
+    email: Vikthex2024@gmail.com password: Helxlet2024 nickname: Hexletvik
+  steps:
+    - Вводить email
+    - Вводить Nickname
+    - Вводить password   
+    - Вводить Password Confirmation
+    - Прожать "submit"
+  expected-result: |
+    Выводится ошибка "Данное имя уже занято"
+
 
 - summary: |
-    Проверить возможность смены языка программирования во время игры    
+    Проверка Cмены ЯП в активной игре    
   requirement: |
     Пользователь может менять язык программирования во время игры
   prerequisites: |
-    Пользователь авторизован
-    Находимся в созданной комнате например: (задание: "boom", level (*), game type (with a bot) time 3 min 
+    Пользователь авторизован 
   test-data: |
      No-date  
   steps:
-    - открываем панель с языками программирования
-    - Выбираем другой (например python)
+    - Нажать CREAT GAME
+    - Выбирать Game Type (with a bot)
+    - нажать кнопку "Create battle"
+    - Открыть панель с языками программирования
+    - Выбирать другой яп (например python)
   expected-result: |
     Язык программирования будет успешно изменен
----
+
+
 - summary: |
     Проверка успешного перезахода в игру    
   requirement: |
     Пользователь должен иметь возможность переключиться обратно в игру.
   prerequisites: |
-    Пользователь авторизован
-    Находимся в игровой комнате например с ботом  
+    Пользователь авторизован  
   test-data: |
      no-date  
   steps:
+    - Нажать CREAT GAME
+    - Выбирать Game Type (with a bot)
+    - нажать кнопку "Create battle"
     - Нажать на кнопку "Back to home"
     - Нажать на кнопку "continue"
   expected-result: |
     Игра будет успешно продолжена
----
+
+
 - summary: |
-    Проверка создания игры с определенным режимом игры
+    Проверка создания игры с ботом
   requirement: |
     Пользователь может создавать свою игру с выбором( уровня сложности,
     времени матча, режима игры, задания или тега);
@@ -119,13 +159,13 @@
   test-data: |
     No-data
   steps:
-    - Прожимаем на кнопку "Create a game"
-    - Прожимаем на кнопку "With a bot"
-    - Прожимаем на кнопку "Create Battle"
+    - Прожать кнопку "Create a game"
+    - Прожать кнопку "With a bot"
+    - Прожать кнопку "Create Battle"
   expected-result: |
     Игра c ботом создана успешно
 
----
+
 - summary: |
     Проверка создания игры с определенным уровнем сложности
   requirement: |
@@ -135,14 +175,14 @@
   test-data: |
     No-data
   steps:
-    - Прожимаем на кнопку "Create a game"
-    - Выбираем Game Type (with a bot)
-    - Прожимаем на кнопку "Ввиде двух звезд" (level)
-    - Прожимаем на кнопку "Create Battle"
+    - Прожать кнопку "Create a game"
+    - Выбирать Game Type (with a bot)
+    - Прожать кнопку "Ввиде двух звезд" (level)
+    - Прожать кнопку "Create Battle"
   expected-result: |
     Будет создана игра с выбраным уровнем сложности
 
----
+
 - summary: |
     Проверка создания игры с определенным заданием
   requirement: |
@@ -153,14 +193,14 @@
   test-data: |
     No-data
   steps:
-    - Прожимаем на кнопку "Create a game"
-    - Открываем список заданий
-    - Из списка выбираем задание например: "add_two_number"
-    - Прожимаем на кнопку "Create Battle"
+    - Прожать кнопку "Create a game"
+    - Открыть список заданий
+    - Из списка выбирать задание например: "add_two_number"
+    - Прожать кнопку "Create Battle"
   expected-result: |
     Будет создана игра с выбраным заданием
 
----
+
 - summary: |
     Проверка возможности создания новой игры с определенным временем матча
   requirement: |
@@ -177,6 +217,7 @@
   expected-result: |
     Игра успешно создана с установленным временем для матча.
 
+
 - summary: |
     Проверка фильтрации списка заданий с помощью тега  
   requirement: |
@@ -186,12 +227,12 @@
   test-data: |
     No-data
   steps:
-    - Нажимаем на кнопку "Create a game"
-    - Из позиции 'tags' выбираем например "math" 
-    - Открываем список заданий
+    - Нажать на кнопку "Create a game"
+    - Из позиции 'tags' выбирать например "math" 
+    - Открыть список заданий
   expected-result: |     
     Список заданий должен быть отфильтрован в соответствии с выбранным тегом
----
+
 
 - summary: |
     Проверка создания игры с выбраным тегом 
@@ -202,12 +243,13 @@
   test-data: |
     No-data
   steps:
-    - Прожимаем на кнопку "Create a game"
-    - Из позиции 'tags' выбираем например "math"
-    - Прожимаем на кнопку "Create Battle"
+    - Прожать кнопку "Create a game"
+    - Из позиции 'tags' выбрать например "math"
+    - Прожать кнопку "Create Battle"
   expected-result: |
     Созданая игра будет с заданием согласно тегу 
----
+
+
 - summary: |
     Проверка фильтрации списка заданий при выборе уровня сложности
   requirement: |
@@ -217,12 +259,13 @@
   test-data: |
     No-data
   steps:
-    - Нажимаем на кнопку "Create a game"
-    - Из позиции 'level' выбираем например (****) 
-    - Открываем список заданий
+    - Нажать кнопку "Create a game"
+    - Из позиции 'level' выбрать например (****) 
+    - Открыть список заданий
   expected-result: |     
     Список заданий должен быть отфильтрован в соответствии с выбранным уровнем сложности
----
+
+
 - summary: |
     Проверка локализации задания на русский язык
   requirement: |
@@ -232,47 +275,13 @@
   test-data: |
     No-data
   steps:
-    - Нажимаем на кнопку "Fight"
-    - открываем список с языками (ru/en) выбираем ru
+    - Нажать на кнопку "Fight"
+    - открыть список с языками (ru/en) выбирать ru
   expected-result: |
     Задача будет отображена на русском языке.
 
----
-- summary: >
-     - Проверка поля ввода email при регистрации
-  requirement: |
-     - Почта при регистрации или авторизации не может быть пустой;
-  prerequisites: |
-    Пользователь не авторизирован
-  test-data: |
-    email:- nickname: hexletvik  password: Hexlet2024 
-  steps:
-    - Вводим "nickname"
-    - Вводим "password"
-    - Вводим "Password Confirmation"
-    - Прожимаем "Submit"
-  expected-result: |
-    Выводится ошибка "Введите email"
----
 - summary: |
-    Проверка регистрации с nickname существующий в системе
-  requirement: |
-    Пользователь не может взять nickname который уже пристусвует в системе;
-  prerequisites: |
-     Имеется аккаунт с nickname: Hexletvik
-  test-data: |
-    email: Vikthex2024@gmail.com password: Helxlet2024 nickname: Hexletvik
-  steps:
-    - Вводим email
-    - Вводим Nickname
-    - Вводим password
-    - Вводим Password Confirmation
-    - Прожимаем "submit"
-  expected-result: |
-    Выводится ошибка "Данное имя уже занято"
----
-- summary: |
-    Проверка чата во время игровой сессии
+    Проверка отправки сообщения в чате игры
   requirement: |
     Во время игры участники должны иметь возможность общаться в чате;
   prerequisites: |
@@ -281,16 +290,16 @@
   test-data: |
     no-data
   steps: |
-    - Прожимаем кнопку "Create a Game"
-    - Прожимаем "Create battle"
-    - В поле чата вводим например: "GL HF"
-    - Прожимаем "send" 
+    - Нажать кнопку "Create a Game"
+    - Нажать кнопку "Create battle"
+    - В поле чата вводить например: "GL HF"
+    - Нажать кнопку "send" 
   expected-result: |
     В чате выводится отправленное сообщение
 
----
+
 - summary: |
-    Проверка чата вне игровой сессии
+    Проверка отправки сообщения в лобби
   requirement: |
     В главном меню есть чат для зарегистрированных пользователей;
   prerequisites: |
@@ -299,11 +308,11 @@
   test-data: |
     no-data
   steps: |
-    - В поле чата вводим например: "Hello"
-    - Прожимаем "send" 
+    - В поле чата вводить например: "Hello"
+    - Нажать "send" 
   expected-result: |
     В чате выводится отправленное сообщение
----
+
 - summary: |
     Проверка воспроизвдения записи завершеной игры
   requirement: |
@@ -313,12 +322,12 @@
   test-data: |
      no-date
   steps: |
-    - Переходим "My profile" 
-    - Прожимаем "Completed games"
-    - Прожимаем "show" 
+    - Переходить  "My profile" 
+    - Нажать кнопку "Completed games"
+    - Нажать кнопку "show" 
   expected-result: |
     Выводится запись завершенной вами игры
----
+
 - summary: |
     Проверка воспроизведение игровой сессий онлайн
   requirement: |
@@ -328,11 +337,11 @@
   test-data: |
      no-date
   steps: |
-    - переходим во вкладку "LOBBY"
-    - Прожимаем "Show" 
+    - переходить во вкладку "LOBBY"
+    - Нажимать кнопку "Show" 
   expected-result: |
     Выводится онлайн игровая сессия других пользователей
----
+
 - summary: |
     Проверка повышения рейтинга
   requirement: |
@@ -350,11 +359,11 @@
     module.exports = solution;
     module.exports = solution;
   steps: |
-    - Вводим код из "test-date"
-    - Прожимаем "run"
+    - Вводить код из "test-date"
+    - Нажать кнопку "run"
   expected-result: |
     Кол-во очков после боя увеличилось (elo_rating 1208)
----
+
 - summary: |
     Проверка работы пригласительной ссылки
   requirement: |
@@ -365,14 +374,15 @@
   test-data: |
     level: 2 , game type: (friend), name: age_two_days , time contorl 3 min;
   steps:
-    - Прожимаем на кнопку "Create a game"
-    - Настраиваем игру согласно "test data"
-    - Копируем ссылку 
-    - Отправляем ссылку
-    - переходим по ссылке на сторонем аккаунте
+    - Нажимать на кнопку "Create a game"
+    - Настраивать игру согласно "test data"
+    - Копировать ссылку 
+    - Отправлять ссылку
+    - переходить по ссылке на сторонем аккаунте
   expected-result: |
     стороний аккаунт успешно подключен, ссылка работает
----
+
+
 - summary: |
     Проверка отображения положения информации о пользователе в рейтинговой таблице 
   requirement: |
@@ -383,13 +393,14 @@
   test-data: |
     no-date
   steps: |
-    - Нажимаем на имя свого профиля
-    - Из списка нажимаем "users raiting"
-    - Переходим во вкладку например: (monthly)
-    - В поиск вводим свой nickname 
+    - Нажать на имя своего профиля
+    - Из списка нажать "users raiting"
+    - Переходить во вкладку например: (monthly)
+    - В поиск вводить свой nickname 
   expected-result: |
     Отображена информация о пользователе в рейтинге за выбранный промежуток времени
----
+
+
 - summary: |
     Проверка создания турнира 
   requirement: |
@@ -402,12 +413,13 @@
     Level "easy", Event "-", Players limit "2", Default language "js", Match
     timeout seconds "177", Break duration seconds "42";
   steps:
-    - Прожимаем кнопку "You may to create one
-    - Производим настройку согласно 'test-data'
-    - Прожимаем "Create"
+    - Нажать кнопку "You may to create one
+    - Производить настройку согласно 'test-data'
+    - Нажать кнопку "Create"
   expected-result: |
     Турнир успешно создан 
----
+
+
 - summary: |
     Проверка кроссбраузерности
   requirement: |
@@ -418,7 +430,8 @@
   test-data: |
     "no-data"  
   steps:
-    - Выбираем Version 123.0.6312.59 (Official Build) (arm64) OC: macOS
-    - Вводим сайт нашего магазина
+    - Выбирать Version 123.0.6312.59 (Official Build) (arm64), 
+    - Выбрать  macOS
+    - Вводить в поиск сайт нашего магазина
   expected-result: |
     Открывается наш сайт 
