@@ -6,7 +6,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    "no-data"  
+    no-data  
   steps:
     - Открыть DevTools
     - Нажать кнопку «Toggle device toolb"
@@ -55,7 +55,7 @@
     Вошли на страницу регистрации "sign up"
     Пользователь имеет аккаунт в Github и авторизирован в нем
   test-data: |
-    "no-data"
+    no-data
   steps:
     - Прожать кнопку "sign in with Github"
   expected-result: |
@@ -69,7 +69,7 @@
     Вошли на страницу регистрации "sign up"
     Пользователь имеет аккаунт в Discrod и авторизирован в нем
   test-data: |
-    "no-data"
+    no-data
   steps:
     - Прожать кнопку "sign in with Discord"
   expected-result: |
@@ -115,7 +115,7 @@
   prerequisites: |
     Пользователь авторизован 
   test-data: |
-     No-date  
+     no-date  
   steps:
     - Нажать CREAT GAME
     - Выбирать Game Type (with a bot)
@@ -142,7 +142,6 @@
   expected-result: |
     Игра будет успешно продолжена
 
-
 - summary: |
     Проверка создания игры с ботом
   requirement: |
@@ -166,7 +165,7 @@
   prerequisites: |
     Пользователь авторизирован
   test-data: |
-    No-data
+    no-data
   steps:
     - Прожать кнопку "Create a game"
     - Выбирать Game Type (with a bot)
@@ -174,7 +173,6 @@
     - Прожать кнопку "Create Battle"
   expected-result: |
     Будет создана игра с выбраным уровнем сложности
-
 
 - summary: |
     Проверка создания игры с определенным заданием
@@ -184,7 +182,7 @@
   prerequisites: |
     Пользователь авторизирован
   test-data: |
-    No-data
+    no-data
   steps:
     - Прожать кнопку "Create a game"
     - Открыть список заданий
@@ -201,7 +199,7 @@
   prerequisites: |
     Пользователь авторизован  
   test-data: |
-    no-date
+    no-data
   steps:
     - Нажать на кнопку "CREATE A GAME"
     - Продвинуть ползунок например к (8 min)
@@ -219,7 +217,7 @@
     No-data
   steps:
     - Нажать на кнопку "Create a game"
-    - Из позиции 'tags' выбирать например "math" 
+    - Из позиции 'tags' выбрать например "math" 
     - Открыть список заданий
   expected-result: |     
     Список заданий должен быть отфильтрован в соответствии с выбранным тегом
@@ -231,7 +229,7 @@
   prerequisites: |
     Пользователь авторизирован
   test-data: |
-    No-data
+    no-data
   steps:
     - Прожать кнопку "Create a game"
     - Из позиции 'tags' выбрать например "math"
@@ -246,7 +244,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    No-data
+    no-data
   steps:
     - Нажать кнопку "Create a game"
     - Из позиции 'level' выбрать например (****) 
@@ -261,7 +259,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    No-data
+    no-data
   steps:
     - Нажать на кнопку "Fight"
     - открыть список с языками (ru/en) выбирать ru
@@ -307,7 +305,7 @@
   prerequisites: |
     Имеется ранее завершенная игра
   test-data: |
-     no-date
+     no-data
   steps: |
     - Переходить  "My profile" 
     - Нажать кнопку "Completed games"
@@ -322,7 +320,7 @@
   prerequisites: |
     Пользователь на главной странице
   test-data: |
-     no-date
+     no-data
   steps: |
     - переходить во вкладку "LOBBY"
     - Нажимать кнопку "Show" 
@@ -377,7 +375,7 @@
   prerequisites: |
     Пользователь авторизирован  
   test-data: |
-    no-date
+    no-data
   steps: |
     - Нажать на имя своего профиля
     - Из списка нажать "users raiting"
@@ -412,7 +410,7 @@
   prerequisites: |
     "Для тестирования используем BrowserStack"
   test-data: |
-    "no-data"  
+    no-data  
   steps:
     - Выбирать Version 123.0.6312.59 (Official Build) (arm64), 
     - Выбрать  macOS
