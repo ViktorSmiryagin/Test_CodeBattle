@@ -412,8 +412,8 @@
   test-data: |
     no-data  
   steps:
-    - Выбирать Version 123.0.6312.59 (Official Build) (arm64), 
-    - Выбрать  macOS
-    - Вводить в поиск сайт нашего магазина
+    - Выбрать браузер (например Google Version 124) 
+    - Выбрать  OC (например macOC Sonoma)
+    - Вводить в поисковую строку наш сайт
   expected-result: |
     Открывается наш сайт 
