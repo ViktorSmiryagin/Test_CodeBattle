@@ -118,10 +118,10 @@
      no-date  
   steps:
     - Нажать CREAT GAME
-    - Выбирать Game Type (with a bot)
+    - Выбрать Game Type (with a bot)
     - нажать кнопку "Create battle"
     - Открыть панель с языками программирования
-    - Выбирать другой яп (например python)
+    - Выбрать другой яп (например python)
   expected-result: |
     Язык программирования будет успешно изменен
 
@@ -135,7 +135,7 @@
      no-date  
   steps:
     - Нажать CREAT GAME
-    - Выбирать Game Type (with a bot)
+    - Выбрать Game Type (with a bot)
     - нажать кнопку "Create battle"
     - Нажать на кнопку "Back to home"
     - Нажать на кнопку "continue"
@@ -168,7 +168,7 @@
     no-data
   steps:
     - Прожать кнопку "Create a game"
-    - Выбирать Game Type (with a bot)
+    - Выбрать Game Type (with a bot)
     - Прожать кнопку "Ввиде двух звезд" (level)
     - Прожать кнопку "Create Battle"
   expected-result: |
@@ -186,7 +186,7 @@
   steps:
     - Прожать кнопку "Create a game"
     - Открыть список заданий
-    - Из списка выбирать задание например: "add_two_number"
+    - Из списка выбрать задание например: "add_two_number"
     - Прожать кнопку "Create Battle"
   expected-result: |
     Будет создана игра с выбраным заданием
@@ -362,7 +362,7 @@
     - Нажимать на кнопку "Create a game"
     - Настраивать игру согласно "test data"
     - Копировать ссылку 
-    - Отправлять ссылку
+    - Отправить ссылку
     - переходить по ссылке на сторонем аккаунте
   expected-result: |
     стороний аккаунт успешно подключен, ссылка работает
