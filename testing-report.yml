@@ -28,7 +28,7 @@
   status: pass
   
 - summary: |
-    Проверка регистрации с nickname существующий в системе
+    Проверка регистрации с Nickname существующий в системе
   status: pass
 
 - summary: |

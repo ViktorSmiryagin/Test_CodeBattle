@@ -119,7 +119,7 @@
   steps:
     - Нажать "CREATE A GAME"
     - Выбрать "Game Type" например "with a bot"
-    - нажать кнопку "Create battle"
+    - Нажать кнопку "Create battle"
     - Открыть панель с языками программирования
     - Выбрать другой яп например "python"
   expected-result: |
@@ -136,7 +136,7 @@
   steps:
     - Нажать "CREATE A GAME"
     - Выбрать "Game Type" например "with a bot"
-    - нажать кнопку "Create battle"
+    - Нажать кнопку "Create battle"
     - Нажать на кнопку "Back to home"
     - Нажать на кнопку "Continue"
   expected-result: |
@@ -308,7 +308,7 @@
   test-data: |
      no-data
   steps: 
-    - Переходить "My profile" 
+    - Переходить в "My profile" 
     - Нажать кнопку "Completed games"
     - Нажать кнопку "show" 
   expected-result: |
@@ -323,7 +323,7 @@
   test-data: |
      no-data
   steps: 
-    - переходить во вкладку "LOBBY"
+    - Переходить во вкладку "LOBBY"
     - Нажимать кнопку "Show" 
   expected-result: |
     Выводится онлайн игровая сессия других пользователей
