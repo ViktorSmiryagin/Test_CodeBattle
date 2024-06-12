@@ -275,11 +275,12 @@
     Пользователь в главном меню
   test-data: |
     no-data
-  steps: |
-    - Нажать кнопку "CREATE A GAME"
-    - Нажать кнопку "Create battle"
-    - В поле чата вводить например "GL HF"
-    - Нажать кнопку "send" 
+  steps:
+  - Нажать кнопку "CREATE A GAME"
+  - Нажать кнопку "Create battle"
+  - В поле чата вводить например "GL HF"
+  - Нажать кнопку "send"
+ 
   expected-result: |
     В чате выводится отправленное сообщение
 
@@ -292,7 +293,7 @@
     Пользователь в главном меню
   test-data: |
     no-data
-  steps: |
+  steps: 
     - В поле чата вводить например "Hello"
     - Нажать кнопку "send" 
   expected-result: |
@@ -306,7 +307,7 @@
     Имеется ранее завершенная игра
   test-data: |
      no-data
-  steps: |
+  steps: 
     - Переходить "My profile" 
     - Нажать кнопку "Completed games"
     - Нажать кнопку "show" 
@@ -321,7 +322,7 @@
     Пользователь на главной странице
   test-data: |
      no-data
-  steps: |
+  steps: 
     - переходить во вкладку "LOBBY"
     - Нажимать кнопку "Show" 
   expected-result: |
@@ -376,7 +377,7 @@
     Пользователь авторизован  
   test-data: |
     no-data
-  steps: |
+  steps: 
     - Нажать на имя своего профиля
     - Из списка нажать "users rating"
     - Переходить во вкладку например "monthly"
