@@ -1,28 +1,26 @@
+## [Project: Testing the CodeBattle Web Application in Production](https://github.com/ViktorSmiryagin/qa-engineer-project-85)
 
-## [Проект тестирование в продакшене web-приложения CodeBattle](https://github.com/ViktorSmiryagin/qa-engineer-project-85)
+### Project Description
 
-### Описание проекта
+In this project, the CodeBattle web application was tested under production conditions. The main goal of the project is to ensure the quality of the product through comprehensive testing and the identification of bugs at various stages of operation.
 
-В данном проекте выполнено тестирование web-приложения CodeBattle в условиях продакшена. Основная цель проекта — обеспечение качества продукта через всестороннее тестирование и выявление ошибок на различных стадиях работы.
+### During the Project
 
-### Во время выполнения проекта
+* Analyzed and supplemented the existing [requirements](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/requirements.yml).
+* Conducted an analysis of application requirements to identify and clarify functional and non-functional aspects.
+* Performed a service analysis: Studied the functionality and performance of the application to identify potential issues and improvements.
+* Developed [test cases](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/test-cases.yml) and performed checks according to the developed test cases: Created and executed test cases to verify the main and additional features of the application.
+* Compiled [test case reports](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/testing-report.yml): Documented the results of the testing for further analysis and reporting.
+* Created [bug reports](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/issues.yml): Described identified bugs with reproduction steps, expected and actual results, and provided suggestions for fixes.
+* Conducted [regression testing](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/reopened_issues.yml): Performed retesting after defect fixes to ensure no new errors were introduced and to confirm the resolution of old ones.
 
-* Проанализировал и дополнил имеющиеся [требования](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/requirements.yml) 
-* Проводился анализ требований к приложению для выявления и уточнения функциональных и нефункциональных аспектов.
-* Произвел анализ сервиса**: Исследование функциональности и производительности приложения для выявления возможных проблем и улучшений.
-* Составил [тест-кейсы](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/test-cases.yml) и произвел проверку согласно составленным тест-кейсам**: Разработка и выполнение тест-кейсов для проверки основных и дополнительных функций приложения.
-* Составил [отчеты о проверенных тест-кейсах](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/testing-report.yml) **: Документирование результатов тестирования для дальнейшего анализа и отчетности.
-* Составил [баг-репорты](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/issues.yml) **: Описание выявленных ошибок с указанием шагов воспроизведения, ожидаемого и фактического результата, а также предложений по исправлению.
-* Произвел [регрессионное тестирование](https://github.com/ViktorSmiryagin/Test_CodeBattle/blob/main/reopened_issues.yml) **: Проведение повторного тестирования после исправления дефектов для гарантии отсутствия новых ошибок и подтверждения исправления старых.
+### Tools Used During the Project
 
-### Использовал во время работы
-
-* **DevTools**: Инструменты разработчика в браузере для анализа, отладки и проверки интерфейсов.
-* **YAML**: Формат разметки для создания конфигурационных файлов и автоматизации процессов.
-* **Browserstack**: Платформа для тестирования веб-приложений на различных устройствах и браузерах.
-* **GitHub**: Система контроля версий для управления исходным кодом и совместной работы.
-* **Командная строка .bash**: Использовалась для управления версиями кода и выполнения скриптов.
-
+* **DevTools**: Browser developer tools for analyzing, debugging, and testing interfaces.
+* **YAML**: A markup format for creating configuration files and automating processes.
+* **Browserstack**: A platform for testing web applications across various devices and browsers.
+* **GitHub**: A version control system for managing source code and collaborating.
+* **Command Line (.bash)**: Used for version control and running scripts.
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ViktorSmiryagin/qa-engineer-project-85/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ViktorSmiryagin/qa-engineer-project-85/actions)
